@@ -86,44 +86,6 @@
 </template>
 <span></span>
 </ws-nav-toggle>
-<ws-nav-collapse disable-body-scroll="true" id="ws-nav-sidebar" disconnected="" visible="">
-<ws-global class="nav-menu-wrapper" slot="navigation" src="/ws/globals/nav-menu/index.html"><ws-navigation>
-<nav>
-<ul class="ws-nav__menu-list">
-<li class="ws-nav__menu-list-item active">
-<a class="ws-nav__menu-link" href="https://streategames.github.io/"><span>Home</span></a>
-</li>
-<li class="ws-nav__menu-list-item" auto-collapse="disabled">
-    <ws-nav-toggle on="hover" class="ws-nav__toggle" toggle="#ws-nav-auto-collapse" group-id="auto-collapse"><template shadowrootmode="open">
-<style>
-  :host([disconnected]) {
-    display: none;
-  }
-</style>
-<slot></slot>
-</template>
-      <a class="ws-nav__menu-link" href="https://streategames.github.io/#">
-        <span>More</span>
-      </a>
-    </ws-nav-toggle>
-    <ws-nav-collapse class="ws-nav__submenu" id="ws-nav-auto-collapse">
-      <ul class="ws-nav__submenu-list"></ul>
-    </ws-nav-collapse>
-  
-  <style>
-    [auto-collapse="disabled"],
-    [dummy-element]{
-      position: absolute!important;
-      right: 0!important;
-      pointer-events: none!important;
-      opacity: 0!important;
-      visibility: hidden!important;
-    }
-  </style>
-</li></ul>
-</nav>
-</ws-navigation></ws-global>
-<ws-global class="phones-wrapper" slot="business-phone" src="/ws/globals/phones/index.html"><p>2024</p></ws-global>
 <div class="ws-m-header-button-group">
 </div>
 </ws-nav-collapse>
