@@ -2,30 +2,44 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="favicon.ico">
-        <link rel="preload" as="image" href="MenuBG.png">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="resources/favicon.ico">
+        <link rel="preload" as="image" href="resources/MenuBG.png">
         <title>Streate | Projects</title>
     </head>
-    <body style="background-image: url('MenuBG.png'); background-color: #00001a;">
+    <body>
         <div class="grid-container">
-        <div class="navbar">
-            <a href="index.html"><image src="streateglogo.png"></image></a>
-            <a style="width: 30px"></a>
-            <a href="index.html"><button class="navbutton">Home</button></a>
-            <a href="projects.html"><button class="navbutton navbutton-selected">Games</button></a>
-            <a href="aboutme.html"><button class="navbutton">About</button></a>
-        </div>
-        <div style="height:2vh;"></div>
-        <div class="projectsgrid">
-            
-            <div class="projectcont">
-                <h1>Game Development</h1>
-                <p>Several games made for the FIICode.<br>These games are work in progress<br>and not indicative of the final product.</p>
-                <a href="https://drive.google.com/drive/u/5/folders/1qjhTsrQtSRHTAAzl_lj0SkfB77wmWheP"><button class="button">Download</button></a>
+        <div class="main">
+            <div class="navbar">
+                <a href="index.html"><image src="resources/streateglogo.png"></image></a>
+                <a style="width: 30px"></a>
+                <a href="index.html"><button class="navbutton">Home</button></a>
+                <a href="projects.html"><button class="navbutton navbutton-selected">Games</button></a>
+                <a href="aboutme.html"><button class="navbutton">About</button></a>
             </div>
+            <div style="height:2vh;"></div>
+            <div class="projectsgrid">
             
+                <div class="projectcont">
+                    <image src="resources/eclipse.png" class="projectimg"></image>
+                    <div class="projecttext">
+                        <h1 style="margin-top: auto; margin-bottom: auto;">Eclipse Protocol</h1>
+                        <p>These games are work in progress and not indicative of the final product.</p>
+                    </div>
+                    <a href="https://drive.google.com/drive/u/5/folders/1qjhTsrQtSRHTAAzl_lj0SkfB77wmWheP" class="projectabut"><button class="button">Download</button></a>
+                </div>
+            
+            </div>
         </div>
+        <footer>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap:20px;">
+                <a><image class="footericon" src="resources/discord.png"></image></a>
+                <a href="https://www.youtube.com/@streategames"><image class="footericon" src="resources/youtube.png"></image></a>
+                <a href="https://github.com/Streate-Games"><image class="footericon" src="resources/github.png"></image></a>
+            </div>
+            <p>&copy; 2026 All rights reserved.</p>
+            <p>Streate Games</p>
+        </footer>
         </div>
     </body>
 </html>

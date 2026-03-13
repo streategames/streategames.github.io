@@ -2,32 +2,40 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="favicon.ico">
-        <link rel="preload" as="image" href="MenuBG.png">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="resources/favicon.ico">
+        <link rel="preload" as="image" href="resources/MenuBG.png">
         <title>Streate | Home</title>
     </head>
-    <body style="background-image: url('MenuBG.png'); background-color: #00001a;">
+    <body>
         <div class="grid-container">
-        <div class="navbar">
-            <a href="index.html"><image src="streateglogo.png"></image></a>
-            <a style="width: 30px"></a>
-            <a href="index.html"><button class="navbutton navbutton-selected">Home</button></a>
-            <a href="projects.html"><button class="navbutton">Games</button></a>
-            <a href="aboutme.html"><button class="navbutton">About</button></a>
-        </div>
-        <div>
-            <div class="mainspacer"></div>
-            <div class="center" style="font-size: 20px; color: #F8FAFC"><image src="streatesmall.png" class="img"></image></div>
-            <p style="text-align: center; font-size: 20px; color: #94A3B8" class="fontinter">Play with your heart, not with your wallet.</p>
-            <div style="height: 10px"></div>
-            <div class="buttonrow">
-                <button class="button" onclick="document.location='projects.html'">Games</button>
-                <button class="button" onclick="document.location='https://www.youtube.com/@streategames'">Youtube</button>
+        <div class="main">
+            <div class="navbar">
+                <a href="index.html"><image src="resources/streateglogo.png"></image></a>
+                <a style="width: 30px"></a>
+                <a href="index.html"><button class="navbutton navbutton-selected">Home</button></a>
+                <a href="projects.html"><button class="navbutton">Games</button></a>
+                <a href="aboutme.html"><button class="navbutton">About</button></a>
+            </div>
+            <div>
+                <div class="mainspacer"></div>
+                <div class="center" style="font-size: 20px; color: #F8FAFC"><image src="resources/streatesmall.png" class="img"></image></div>
+                <p style="text-align: center; font-size: 20px; color: #94A3B8" class="fontinter">Play with your heart, not with your wallet.</p>
+                <div style="height: 10px"></div>
+                <div class="buttonrow">
+                    <button class="button" onclick="document.location='projects.html'">Games</button>
+                    <button class="button" onclick="document.location='https://www.youtube.com/@streategames'">Youtube</button>
+                </div>
             </div>
         </div>
         <footer>
-            <div> HIIII!</div>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap:20px;">
+                <a><image class="footericon" src="resources/discord.png"></image></a>
+                <a href="https://www.youtube.com/@streategames"><image class="footericon" src="resources/youtube.png"></image></a>
+                <a href="https://github.com/Streate-Games"><image class="footericon" src="resources/github.png"></image></a>
+            </div>
+            <p>&copy; 2026 All rights reserved.</p>
+            <p>Streate Games</p>
         </footer>
         </div>
     </body>

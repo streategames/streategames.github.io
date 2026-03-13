@@ -15,6 +15,20 @@
     gap: 20px;
 }
 
+body {
+    background-image: url('MenuBG.png');
+    background-color: #00001a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main {
+    min-height: 100vh;
+    flex: 1;
+}
+
 .fontinter{
     font-family: 'Montserrat', sans-serif;
 }
@@ -29,6 +43,7 @@
     grid-area: nav;
     align-items: center;
     gap: 30px;
+    margin: 10px;
 }
 
 .navbutton {
@@ -109,29 +124,55 @@
 .projectsgrid {
     grid-area: projects;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 70px;
 }
 
 .projectcont {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    display: flex;
+    flex-wrap: wrap;
     color: #94A3B8;
     text-overflow: clip;
+    text-wrap: wrap;
     border: solid;
     border-color: #1E293B;
     font-family: 'Montserrat', sans-serif;
     background-color: #1E293B;
     border-radius: 50px;
     border-width: 2px;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
+    align-items: center;
+    gap: 20px;
     padding: 15px;
+    padding-right: 30px;
     font-size:120%;
     transition: all 0.4s ease
 
 }
+
+.projecttext {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.projectabut {
+    margin-left: auto;
+
+}
+
+.projectimg {
+    width: 100px;
+    height: 100px;
+    margin-left: 3vh;
+    border: solid;
+    border-color: #ea9c75;
+    border-width: 1px;
+    border-radius: 30px;
+}
+
 
 .projectcont:hover {
     border-color: #ea9c75;
@@ -143,8 +184,20 @@
     height: 20vh;
 }
 
+.footericon {
+    max-width: 32px;
+    max-width: 32px;
+}
+
 footer{
   grid-area: footer;
+  background-color: #12121F;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  
+
 }
 
 @media (max-width: 600px){
@@ -158,6 +211,21 @@ footer{
     }
     .projectcont{
         font-size: 80%;
+        margin-right: 5vh;
+        margin-left: 5vh;
+        justify-content: center;
+        text-align: center;
+        padding-right: 15px;
+    }
+    .projectimg {
+        margin-left: 0px;
+        margin-top: 2vh;
+    }
+    .projectabut {
+        margin-left: 0px;
+    }
+    .projecttext {
+        text-align: center;
     }
 }
 
@@ -167,5 +235,10 @@ footer{
     }
     .projectcont {
         font-size: 90%;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
